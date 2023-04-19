@@ -17,37 +17,50 @@ public class CellPhone {
         this.carrier = carrier;
         this.phoneNum = phoneNum;
         this.owner = owner;
+
+    }
+    public CellPhone(){
+
     }
 
     public double getSerial(){
         return this.serialNumber;
     }
-    public double setSerial(double serialNumber){
+    public void setSerial(double serialNumber){
         this.serialNumber = serialNumber;
-        return serialNumber;
+
     }
 
     public String getModel(){
         return this.model;
     }
+    public void setModel(String model){
+        this.model = model;
+    }
 
     public String getCarrier(){
         return this.carrier;
+    }
+    public void setCarrier(String carrier){
+        this.carrier = carrier;
     }
 
     public String getPhoneNum(){
         return this.phoneNum;
     }
+    public void setPhoneNum(String phoneNum){
+        this.phoneNum = phoneNum;
+    }
 
     public String getOwner(){
         return this.owner;
     }
-    public dial(String cellPhone2, String cellPhone1){
-        this.cellPhone2 = cellPhone2;
-        this.phoneNum = cellPhone1;
-        
+    public void setOwner(String owner){
+        this.owner = owner;
+    }
 
-
+    public void dial(String number){
+        System.out.println(owner + "'s phone is calling " + number);
     }
 
 
